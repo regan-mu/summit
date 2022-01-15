@@ -1,0 +1,23 @@
+{% extends 'basenolanding.html' %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/about.css') }}">
+{% endblock head %}
+    {% block content %}
+        <div class="about-describe">
+                    <h2>About Us</h2>
+                    <p>
+                        Summit Data Academy is a 21st century data school commited to improving the tech skills across the African continent.
+                        Data has been dubbed the <b>"NEW OIL"</b> and  demand for Data Savvy professionals is projected to increase
+                        tremendously over the next 10 years. Therefore we've taken on the responsibility to equip individuals
+                        across Africa with the skills
+                        necessary to analyze, manipulate and derive insights from massive amounts of data.
+                        This will enable companies to make informed data-driven decisions.
+                    </p>
+                    <p>
+                        By 2035 Africa will have the largest workforce on the planet, and our
+                        goal is to ensure that this workforce has the relevant skills to not only compete in the world job market but also
+                        in entrepreneurship and innovation.
+                    </p>
+                    <p class='bottom'><strong>Join Summit Data Academy, stay ahead of the curve!</strong></p>
+                </div>
+    {% endblock content %}

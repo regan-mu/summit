@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Data Academy - Course application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/applications.css') }}">
+</head>
+<body>
+    <div class="apply">
+        <div class="apply-inner">
+            <div class="application-form">
+                <form action="" class="apply-form">
+                    <fieldset>
+                        <legend>Application Form</legend>
+                        <p>
+                            <label for="fname">First Name</label> <br />
+                            <input type=text id='fname' required>
+                        </p>
+                        <p>
+                            <label for="lname">Last Name</label> <br />
+                            <input type=text id='lname' required>
+                        </p>
+                        <p>
+                            <label for="email">Email</label> <br />
+                            <input type=text id='email' required>
+                        </p>
+                        <p class='mobile'>
+                            <label for="mobile">Mobile Number</label> <br />
+                            <input type=text id='mobile' required>
+                        </p>
+                        <p>
+                            <label for="Gender">Gender</label> <br />
+                            <input type=text id='Gender' required>
+                        </p>
+                        <p>
+                            <label for="Country">Country</label> <br />
+                            <input type=text id='country' required>
+                        </p>
+                        <p>
+                            <label for="course">Course</label> <br />
+                            <input type=text id='course' required>
+                        </p>
+                        <p>
+                            <label for="education">Highest Education level</label> <br />
+                            <input type=text id='education' required>
+                        </p>
+                        <p>
+                            <label for="ad-mode">How did you hear about us?</label> <br />
+                            <input type=text id='ad-mode' required>
+                        </p>
+                        <p class="submit">
+                            <input type=submit value='Apply' id='submit-button'>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="application-img">
+                <div class="over-lay"></div>
+                <div class="overlay-text">
+                    <img src="../static/assets/images/logo4.png" alt="Summit Data Academy Applications">
+<!--                    <h3>Summit Data Academy</h3>-->
+                    <p>Course Application Form</p>
+                </div>
+                <!-- <img src="./images/application.png" alt="Summit Data Academy Applications"> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

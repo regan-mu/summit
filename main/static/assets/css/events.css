@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+:root {
+    --oswald: 'Oswald', sans-serif;
+    --pt: 'PT Serif', serif;
+    --roboto: 'Roboto Condensed', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.events {
+    position: relative;
+    width: 100%;
+    background: rgb(226, 242, 231);
+    height: 100vh;
+}
+.events .events-inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--pt);
+    padding: 0.5rem;
+}
+.events .events-inner h3 {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+.events .events-inner p {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+.events .events-inner a {
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+    .events .events-inner p {
+        font-size: 1rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+:root {
+    --oswald: 'Oswald', sans-serif;
+    --pt: 'PT Serif', serif;
+    --roboto: 'Roboto Condensed', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main .about-describe h2 {
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+.main .about-describe {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .about-describe p {
+    width: 90%;
+    font-size: 1.4rem;
+    margin: 1rem auto;
+}
+.main .about-describe > .bottom {
+    position: relative;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main .about-describe h2 {
+        font-size: 2rem;
+    }
+    .main .about-describe {
+        width: 95%;
+    }
+    .main .about-describe p {
+        width: 95%;
+        font-size: 1.2rem;
+    }
+    .main .about-describe > .bottom {
+        font-size: 1.2rem;
+    }
+}

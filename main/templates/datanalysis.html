@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+{% endblock head %}
+<div class="main">
+    {% block landing %}
+        <div class="describe">
+            <h1>Data Analysis with Python.</h1>
+            <p>
+                This 8-week analytics course introduces you to data analysis with Python, logic building, data processing and
+                equips you with the necessary skills needed to analyse, manipulate and derive
+                insights from data. <br />
+                It also serves as an introductory course for our <a href='#'> Data Science & ML Course.</a>
+            </p>
+            <a href='../static/assets/resources/Data Analysis Outline.pdf' target="_blank" rel='noopener noreferrer'>Download Course Outline &nbsp;<i  class="fa fa-arrow-right"></i></a>
+        </div>
+    {% endblock landing %}
+
+
+    {% block content %}
+    <div class="analytics">
+        <div class="analytics-def">
+            <h2>What is Data Analytics</h2>
+            <p>
+                Data Analytics is the process of examining datasets to draw conclusions about the information they contain.
+                Data analytic techniques enable you to take raw data and uncover patterns to extract valuable insights from it.
+                Data analytics initiatives can help businesses increase revenue, improve operational efficiency, optimize marketing campaigns and bolster customer service efforts.
+                Analytics also enable organizations to respond quickly to emerging market trends and gain a competitive edge over business rivals.
+            </p>
+        </div>
+        <div class="analytics-img">
+            <img src='../static/assets/images/describe.png' alt='Summit Data School'>
+        </div>
+    </div>
+    <div class="sep"></div>
+    <div class="requirements">
+        <h6>Course Prerequisites</h6>
+        <ul>
+            <li>Basic understanding of mathematics.</li>
+            <li>Laptop/Computer with atleast 4GB RAM, Core i3.</li>
+            <li>Stable Internet Connection (Atleast 2mbps).</li>
+            <li>Working Webcam & Microphone.</li>
+        </ul>
+    </div>
+    <div class="learnings">
+        <div class="duration">
+            <h4>Course Duration</h4>
+            <p>8 Weeks</p>
+            <p>Fees: Kes 15, 000 (150 USD)</p>
+        </div>
+        <div class="skills">
+            <h4>You'll Learn</h4>
+            <ul class="sk">
+                <li>Python Programming.</li>
+                <li>Statistics.</li>
+                <li>Databases.</li>
+                <li>Pandas.</li>
+                <li>Numpy.</li>
+                <li>Data Visualization.</li>
+                <li>Data Dashboards.</li>
+                <li>Web scraping.</li>
+            </ul>
+        </div>
+    </div>
+    {% endblock content %}
+</div>

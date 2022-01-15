@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Data Academy - Data Analysis & Data Science School.</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/index.css') }}">
+    {% block head %}
+    {% endblock head %}
+</head>
+<body>
+    <div class="main">
+        <div class="landing-page">
+            <div class="landing-page-inner">
+                <div class="header">
+                    <div class="menu">
+                        <div class="logo">
+                            <img src="../static/assets/images/logo1.png" alt='Summit Data Academy Logo'>
+                        </div>
+                        <div class="menu-items">
+                            <ul class='menu-list'>
+                                <li class="item"><a href="{{ url_for('home') }}">Home</a></li>
+                                <li class="item"><a href="{{ url_for('about') }}">About</a></li>
+                                <li class="item"><a href="{{ url_for('events') }}">Events</a></li>
+                                <li class="item">
+                                        <div class="dropdown">
+                                            <button class="dropbtn">Courses</button>
+                                            <div class="dropdown-content">
+                                                <a href="{{ url_for('data_analysis') }}">Data Analysis</a>
+                                                <a href="#">Python Progamming</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                <li class="item apply-btn"><a href="{{ url_for('applications') }}">Enroll Today</a></li>
+                            </ul>
+                        </div>
+                        <div class="hamburger">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+                {% block landing %} {% endblock %}
+            </div>
+        </div>
+        {% block content %} {% endblock %}
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="brief">
+                    <img src='../static/assets/images/logo1.png' alt='Summit Data Academy'>
+                    <p>
+                        We are a modern school specializing in Data and Data related technologies such as
+                        Data Analytics, Data Science, Machine Learning and Artificial Intelligence.
+                    </p>
+                </div>
+                <div class="contacts">
+                    <p>
+                        Summit Data Academy<br />
+                        Nairobi, Kenya.<br /><br />
+                        Mobile: (+254) 113 835 154 <br />
+                        Email: info@summitdatacademy.com
+                    </p>
+                    <div class='socials'>
+                        <a href='#'><img src='../static/assets/images/facebook.webp' alt='Summit Data Academy Facebook'></a>
+                        <a href='#'><img src='../static/assets/images/twitter.webp' alt='Summit Data Academy Twitter'></a>
+                        <a href='#'><img src='../static/assets/images/instagram.webp' alt='Summit Data Academy instagram'></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>© 2022 Summit Data Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+<script src="{{url_for('static', filename='assets/js/index.js')}}"></script>
+</body>
+</html>
